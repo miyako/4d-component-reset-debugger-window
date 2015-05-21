@@ -23,6 +23,7 @@ Case of
    C_LONGINT($i)
    
    For ($i;1;Size of array($windows))
+   
     $window:=$windows{$i}
     $name:=""
     DOM GET XML ATTRIBUTE BY NAME($window;"name";$name)
