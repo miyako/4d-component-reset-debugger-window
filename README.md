@@ -44,11 +44,11 @@ Case of
 
  Else 
 
- $path:=Get 4D folder(Active 4D Folder)+\
- "4D Window Bounds v"+Substring(Application version;1;2)+Folder separator+\
- "coreDialog"+Folder separator+\
- "[projectForm]"+Folder separator+\
- "4ddebugger.json"
+  $path:=Get 4D folder(Active 4D Folder)+\
+  "4D Window Bounds v"+Substring(Application version;1;2)+Folder separator+\
+  "coreDialog"+Folder separator+\
+  "[projectForm]"+Folder separator+\
+  "4ddebugger.json"
 
   If (Test path name($path)=Is a document)
    ON ERR CALL("FILESYSTEM_ERROR")
